@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Channels Unsubscriber",
+  "version": "1.0.0",
+  "description": "Allows you to unsubscribe from all your Youtube channels, while keeping the channels you want.",
+  "action": {
+    "default_title": "Youtube Channels Unsubscriber",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Icons/icon16.png",
+      "48": "Icons/icon48.png",
+      "128": "Icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "Icons/icon16.png",
+    "48": "Icons/icon48.png",
+    "128": "Icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/feed/channels"],
+      "js": ["content-script.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab"]
+}
