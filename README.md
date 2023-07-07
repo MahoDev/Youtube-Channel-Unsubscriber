@@ -12,7 +12,7 @@ https://github.com/MahoDev/Youtube-Channel-Unsubscriber/assets/91033213/b40ba4de
 
 ## Manual Installation Guide:
 
-**Download**: from [here](https://github.com/MahoDev/Youtube-Channel-Unsubscriber/releases/download/v1.0.0/Youtube.unsubscriber.extension.rar)
+**Download**: From [here](https://github.com/MahoDev/Youtube-Channel-Unsubscriber/releases/download/v1.0.0/Youtube-Channel-Unsubscriber.rar).
 
 **Extract**: Extract the contents of the ZIP file to a folder on your computer.
 
