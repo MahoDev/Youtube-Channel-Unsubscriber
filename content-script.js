@@ -79,11 +79,10 @@ function scriptLoad() {
         ? 2
         : lastElement.innerText.match(/عنصر/)
         ? 1
-        : lastElement.innerText.match(/\d/);
+        : +lastElement.innerText.match(/\d+/);
       let channelsCount = visibleChannelsCount + showMoreChannelsCount;
       //<= 6 means no "show more" part. Subtract one because youtube counts the "browse channels" option as part of the "show n more"
       channelsCount = channelsCount <= 6 ? channelsCount : channelsCount - 1;
-      console.log(channelsCount);
       resolve(channelsCount);
     });
   }
