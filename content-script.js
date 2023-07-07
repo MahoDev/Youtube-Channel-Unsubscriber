@@ -100,7 +100,7 @@ function scriptLoad() {
             clearInterval(intervalId);
             resolve();
           }
-        }, 100);
+        }, 20);
       });
 
       let subsChannelsCount = await subscribedChannelsCount();
@@ -108,7 +108,6 @@ function scriptLoad() {
       let scrollDown = function () {
         window.scrollTo(0, parentContainer.scrollHeight);
       };
-      setTimeout(scrollDown, 500);
       //If the subscriptions aren't alot and finished loading from first scrollDown
       let channelsInfo = document.querySelectorAll("#info-section");
       if (channelsInfo.length === subsChannelsCount) {
@@ -238,7 +237,7 @@ function scriptLoad() {
               clearInterval(handlerId);
               resolve();
             }
-          }, 100);
+          }, 30);
         });
       };
 
